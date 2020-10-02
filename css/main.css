@@ -9947,7 +9947,7 @@ button > i.fa-search{
 
 .top-side-menu-burger-out-btn, .top-side-menu-burger-in-btn {
   position: fixed;
-  top: 40px;
+  top: 65px;
   right: 70px;
   width: 30px;
   height: 25px;
@@ -10036,7 +10036,7 @@ height: 81px;
 .photo-header-rostex{
   /*padding-left:20px;*/
   /*padding-top: 12px;*/
-  padding:12px 0 0 20px;
+  padding:12px 0 0 50px;
 }
 .photo-header-wrap .photo-header-rostex > img{
   height: 51px;
