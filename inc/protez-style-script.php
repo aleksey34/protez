@@ -20,6 +20,7 @@ function protez_scripts() {
 //	wp_enqueue_style("" , get_template_directory_uri()."/google_fonts.css" , array() );
 
 	wp_enqueue_style("fontawesome" , get_template_directory_uri()."/css/fontawesome-free-5.15.0-web/css/all.min.css" , array() );
+	wp_enqueue_style("bootstrap-4.5.0" , get_template_directory_uri()."/css/bootstrap-4.5.0/css/bootstrap.min.css" , array() );
 
 //not work - why&
 	//wp_enqueue_style("fontawesome" , get_template_directory_uri()."/node_modules/@fontawesome/fontawesome-free/css/all.min.css" , array() );
@@ -45,6 +46,7 @@ function protez_scripts() {
 //	wp_enqueue_script("scrollax.min.js" , get_template_directory_uri()."/js/scrollax.min.js" , array("jquery") , null , true);
 
 
+	wp_enqueue_script("bootstrap-4.5.0" , get_template_directory_uri()."/js/bootstrap-4.5.0/js/bootstrap.bundle.min.js" , array("jquery") , null , true);
 	wp_enqueue_script("main" , get_template_directory_uri()."/js/main.js" , array("jquery") , null , true);
 
 //	wp_enqueue_script("jquery-easing" , get_template_directory_uri()."/js/jquery.easing.1.3.js" , array("jquery") , null , true);

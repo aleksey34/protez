@@ -102,7 +102,6 @@
                     <?php endif;  ?>
                     <div>
                         <p class="social-networks">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</p>
-<!--                        <img class="social-networks" src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/ico_socials2.svg" alt="">-->
                        <?php
                        $footer_socil_media = carbon_get_theme_option("footer_social_media");
                       if(!empty($footer_socil_media)) :
@@ -114,9 +113,7 @@
                         endif;
                         ?>
                     </div>
-                    <div>
-                        <img class="footer-logo-corruption" src="<?php echo get_template_directory_uri(); ?>/assets/images/rostec_hotline.png" alt="">
-                    </div>
+
                 </div>
             </div>
 	        <?php
