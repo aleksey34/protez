@@ -497,11 +497,18 @@ li.current-menu-item a{
 
   }
   .top-side-menu-body{
-    gap: 33px;
+    gap: 0 33px;
     grid-template-columns: 1fr;
 
   }
 
 }
 
+/*for device less than 360px*/
+@media (max-width: 360px) {
+  .top-side-menu-burger-out-btn, .top-side-menu-burger-in-btn {
+  right: 18px;
+  }
+
+}
 
