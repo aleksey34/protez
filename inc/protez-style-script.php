@@ -20,7 +20,9 @@ function protez_scripts() {
 //	wp_enqueue_style("" , get_template_directory_uri()."/google_fonts.css" , array() );
 
 	wp_enqueue_style("fontawesome" , get_template_directory_uri()."/css/fontawesome-free-5.15.0-web/css/all.min.css" , array() );
-	wp_enqueue_style("bootstrap-4.5.0" , get_template_directory_uri()."/css/bootstrap-4.5.0/css/bootstrap.min.css" , array() );
+
+//	add it in scss
+	//wp_enqueue_style("bootstrap-4.5.0" , get_template_directory_uri()."/css/bootstrap-4.5.0/css/bootstrap.min.css" , array() );
 
 //not work - why&
 	//wp_enqueue_style("fontawesome" , get_template_directory_uri()."/node_modules/@fontawesome/fontawesome-free/css/all.min.css" , array() );

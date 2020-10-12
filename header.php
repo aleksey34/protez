@@ -8,7 +8,6 @@
  *
  * @package protez
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -16,16 +15,13 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-
 <div id="page" class="site">
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg <?php  echo is_admin_bar_showing() ? '' : 'fixed-top' ;  ?>  navbar-dark bg-dark">
 		    <?php
 		    $logo1 = carbon_get_theme_option("protez_header_logo_1");
 		    $logo2 = carbon_get_theme_option("protez_header_logo_2");
@@ -45,7 +41,4 @@
             </div>
         </nav>
     </header>
-
-
-
 <?php   get_template_part('template-parts/top-side-menu'); ?>

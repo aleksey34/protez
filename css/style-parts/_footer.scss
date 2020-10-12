@@ -1,0 +1,114 @@
+
+.nav-bottom {display: block;  }
+.nav-bottom .footer-menu-wrap {
+  display: flex;
+  justify-content:space-around;
+  /*overflow: hidden;*/
+}
+.nav-bottom .footer-menu-wrap > div {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  vertical-align: top;
+}
+
+.nav-bottom .footer-menu-wrap > div.empty {
+  display: none
+}
+
+
+.nav-bottom {
+  padding-top: 4em;
+  padding-bottom: 3em;
+  /* border: 1px solid rgba(255,255,255,.3); */
+  /* border-width: 1px 0; */
+  //display: table;
+  margin: 0 auto;
+  display:flex;
+  justify-content:center;
+}
+
+.footer {
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(8, 11, 11), rgb(16, 21, 22), rgb(25, 32, 33), rgb(33, 42, 44), rgb(41, 53, 55), rgb(49, 63, 66));
+}
+
+
+.nav-bottom ul {
+  margin-top: 1.75em;
+  padding: 0;
+}
+
+.fp-section .nav-bottom {
+  padding-bottom: 1em;
+}
+
+.text-footer  , .footer-menu-wrap ul li{
+  background: none;
+  display: block;
+  /*float: left;*/
+  padding: 10px;
+  margin-top: 5px;
+}
+
+
+.footer-information {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 35px;
+  padding: 0 15px;
+}
+.footer-information > div:first-child{
+  margin-right: 15px;
+}
+
+.footer-logo-corruption {
+  margin-top: -30px;
+}
+
+
+.footer-copyright{
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+  margin: 0 0 0 0;
+}
+.footer nav.nav-bottom  li a{
+  color: #eee;
+  transition: all 0.5s;
+}
+.footer nav.nav-bottom  li a:hover{
+  color: #fff;
+}
+.footer nav.nav-bottom  li:first-child > a ,
+.footer-menu-wrap ul li.current-menu-item a{
+  color: #eac15a;
+  font-size: 21px;
+}
+.footer nav.nav-bottom  li.current-menu-item a{
+
+}
+.nav-bottom{
+  padding-top: 0;
+}
+
+.footer-information  i.fab{
+  width: 26px;
+  font-size: 21px;
+  cursor: pointer;
+  transition: all 0.5S;
+  color: #999;
+}
+.footer-information  i.fab:hover{
+  transform: translateY(-20%);
+  color: #fff;
+}
+li.current-menu-item a{
+  text-decoration: none;
+  color: #eac15a;
+  outline: none !important; }
+
+.admin-bar .navbar {
+  top: -35px;
+}

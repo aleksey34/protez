@@ -1,8 +1,6 @@
 <!-- modal top side menu  -->
 <div class="top-side-menu">
-
 	<div class="top-side-menu-header">
-
 		<div class="top-side-menu-search">
             <?php get_search_form();  ?>
 		</div>
@@ -16,16 +14,13 @@
             <?php endforeach;
             endif;
             ?>
-			<div class="top-side-menu-burger-in-btn">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
 		</div>
+        <div class="top-side-menu-burger-in-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 	</div>
-
-
-
 	<div class="top-side-menu-body">
 		<div class="top-side-menu-columns">
             <?php
@@ -79,10 +74,8 @@
 			?>
 		</div>
 	</div>
-
 </div>
 <!-- modal top side menu  -->
-
 <div class="top-side-menu-burger-out-btn">
 	<span></span>
 	<span></span>

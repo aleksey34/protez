@@ -1,0 +1,12 @@
+h6 {
+  color:blue;
+}
+p {
+  color:#ffffff;
+  font: 15px Arial;
+}
+
+.admin-bar #page{
+  //margin-top: 35px;
+  margin-top: $adminbar_top_offset;
+}

@@ -1,0 +1,28 @@
+header.header li.current-menu-item a.nav-link {
+  color: #eac15a;
+}
+header.header li.current-menu-item:hover a.nav-link {
+  color: #eac15a;
+}
+.container-nav-header{
+  display: flex;
+  width: 100%;
+}
+.photo-header-wrap{
+  display: flex;
+  justify-content: flex-start;
+}
+.photo-header-wrap .photo-header .photo-logo {
+  height: 81px;
+}
+.photo-header-rostex{
+  /*padding-left:20px;*/
+  /*padding-top: 12px;*/
+  padding:12px 0 0 50px;
+}
+.photo-header-wrap .photo-header-rostex > img{
+  height: 51px;
+}
+
+
+
