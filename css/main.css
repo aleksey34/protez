@@ -344,6 +344,9 @@ li.current-menu-item a{
   color: #eac15a;
   outline: none !important; }
 
+.admin-bar .navbar {
+  top: -35px;
+}
 
 /*setting for mobile and etc*/
 /*// Малые девайсы («ландшафтные телефоны», >= 576px)*/
@@ -352,6 +355,16 @@ li.current-menu-item a{
   .footer nav.nav-bottom .footer-menu-wrap{
     padding: 0 15px;
   }
+
+  /*header , sidemenu*/
+  .admin-bar .navbar {
+    top: -36px;
+  }
+  .top-side-menu-burger-out-btn, .top-side-menu-burger-in-btn{
+    top: 51px;
+  }
+
+
 }
 /*// Большие девайсы (десктопы, >= 992px)*/
 @media (max-width: 991px) {
@@ -374,6 +387,15 @@ li.current-menu-item a{
   }
 
   /*header sidemenu*/
+  .admin-bar .navbar {
+    top: -36px;
+  }
+
+  .top-side-menu-burger-out-btn, .top-side-menu-burger-in-btn{
+    top: 51px;
+  }
+
+
   .top-side-menu-search > form > button{
     top: 0px;
     left: -52px;
@@ -404,8 +426,13 @@ li.current-menu-item a{
   .footer nav.nav-bottom .footer-menu-wrap > div ul li a {
     font-size: 20px;
   }
+
+  .admin-bar .navbar {
+    top: -36px;
+  }
+
   .top-side-menu-burger-out-btn, .top-side-menu-burger-in-btn{
-    top: 30px;
+    top: 94px;
   }
   .top-side-menu-search > form > span{
     font-size: 1.5rem;
@@ -436,9 +463,13 @@ li.current-menu-item a{
     max-width: 100%;
   }
 
+
   /*header side menu*/
+  .admin-bar .navbar{
+   top: -36px;
+  }
   .top-side-menu-burger-out-btn, .top-side-menu-burger-in-btn{
-    top: 30px;
+    top: 56px;
   }
   .top-side-menu-search > form > input[type=text]{
     width: 133px;
@@ -472,12 +503,5 @@ li.current-menu-item a{
   }
 
 }
-
-
-
-
-
-
-
 
 
