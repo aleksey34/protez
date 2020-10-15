@@ -39,6 +39,11 @@
 			    protez_get_primary_menu();
 			    ?>
             </div>
+            <div class="top-side-menu-open-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 <?php   get_template_part('template-parts/top-side-menu'); ?>

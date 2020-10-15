@@ -1,10 +1,13 @@
 <!-- modal top side menu  -->
-<div class="top-side-menu">
-	<div class="top-side-menu-header">
-		<div class="top-side-menu-search">
+<div class="top-side-menu container-fluid pt-3 pb-3">
+    <div class="top-side-menu-close-btn">
+        &#10011;
+    </div>
+    <div class="top-side-menu-header row justify-content-between">
+		<div class="top-side-menu-search col-12 col-md-7 col-lg-8">
             <?php get_search_form();  ?>
 		</div>
-		<div class="top-side-menu-social">
+		<div class="top-side-menu-social pt-4 col-12 col-md-5 col-lg-4">
             <?php
             $side_menu_media = carbon_get_theme_option("side_menu_social_media");
             if(!empty($side_menu_media)) :
@@ -15,14 +18,9 @@
             endif;
             ?>
 		</div>
-        <div class="top-side-menu-burger-in-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
 	</div>
-	<div class="top-side-menu-body">
-		<div class="top-side-menu-columns">
+	<div class="pt-5 row justify-content-center justify-content-md-between top-side-menu-body">
+		<div class="col-9 col-md-4 top-side-menu-columns">
             <?php
             $top_side_menu_column_1 =  carbon_get_theme_option("side_menu_column_1");
             if(!empty($top_side_menu_column_1)) :
@@ -39,7 +37,7 @@
             endif;
             ?>
 		</div>
-		<div class="top-side-menu-columns">
+		<div class="col-9 col-md-4 top-side-menu-columns">
 			<?php
 			$top_side_menu_column_2 =  carbon_get_theme_option("side_menu_column_2");
 			if(!empty($top_side_menu_column_2)) :
@@ -56,7 +54,7 @@
 			endif;
 			?>
 		</div>
-		<div class="top-side-menu-columns">
+		<div class="col-9 col-md-4 top-side-menu-columns">
 			<?php
 			$top_side_menu_column_3 =  carbon_get_theme_option("side_menu_column_3");
 			if(!empty($top_side_menu_column_3)) :
@@ -75,10 +73,3 @@
 		</div>
 	</div>
 </div>
-<!-- modal top side menu  -->
-<div class="top-side-menu-burger-out-btn">
-	<span></span>
-	<span></span>
-	<span></span>
-</div>
-<!-- END nav -->

@@ -334,8 +334,8 @@ footerSlickWrap.slick({
 // top side menu show and hide
 jQuery(document).ready(function($) {
 	
-const outShowBtn = jQuery(".top-side-menu-burger-out-btn");
-const inHideBtn = jQuery(".top-side-menu-burger-in-btn");
+const outShowBtn = jQuery(".top-side-menu-open-btn");
+const inHideBtn = jQuery(".top-side-menu-close-btn");
 
 const sideMenu = jQuery(".top-side-menu");
 
