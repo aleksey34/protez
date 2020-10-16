@@ -27,7 +27,7 @@ function protez_scripts() {
 //not work - why&
 	//wp_enqueue_style("fontawesome" , get_template_directory_uri()."/node_modules/@fontawesome/fontawesome-free/css/all.min.css" , array() );
 
-	wp_enqueue_style("main" , get_template_directory_uri()."/css/main.css" , array() );
+	wp_enqueue_style("main" , get_template_directory_uri()."/css/main.min.css" , array() );
 
 
 	//wp_enqueue_style("" , get_template_directory_uri()."/google_fonts.css" , array() );
@@ -50,6 +50,18 @@ function protez_scripts() {
 
 	wp_enqueue_script("bootstrap-4.5.0" , get_template_directory_uri()."/js/bootstrap-4.5.0/js/bootstrap.bundle.min.js" , array("jquery") , null , true);
 	wp_enqueue_script("main" , get_template_directory_uri()."/js/main.js" , array("jquery") , null , true);
+
+	$ajaxData  = [
+		"nonce" => wp_create_nonce('search_form'),
+		//"action" => "header_search",
+		"url" => admin_url("admin-ajax.php"),
+	];
+	wp_localize_script('main' , 'ajaxSearchData' , $ajaxData );
+
+
+
+
+
 
 //	wp_enqueue_script("jquery-easing" , get_template_directory_uri()."/js/jquery.easing.1.3.js" , array("jquery") , null , true);
 

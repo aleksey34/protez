@@ -32,7 +32,10 @@ require_once  get_template_directory() . '/inc/carbonfields/carbonfields-theme-o
 require_once  get_template_directory() . '/inc/carbonfields/carbonfields-metabox.php';
 
 
-
+/**
+ * search ajax handler
+ */
+require_once  get_template_directory() . '/inc/protez-search-ajax.php';
 
 
 

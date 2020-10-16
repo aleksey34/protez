@@ -238,28 +238,28 @@
 
 
 	// navigation
-	var OnePageNav = function() {
-		$(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
-		 	e.preventDefault();
-
-		 	var hash = this.hash,
-		 			navToggler = $('.navbar-toggler');
-		 	$('html, body').animate({
-		    scrollTop: $(hash).offset().top
-		  }, 700, 'easeInOutExpo', function(){
-		    window.location.hash = hash;
-		  });
-
-
-		  if ( navToggler.is(':visible') ) {
-		  	navToggler.click();
-		  }
-		});
-		$('body').on('activate.bs.scrollspy', function () {
-		  console.log('nice');
-		})
-	};
-	OnePageNav();
+	// var OnePageNav = function() {
+	// 	$(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
+	// 	 	e.preventDefault();
+    //
+	// 	 	var hash = this.hash,
+	// 	 			navToggler = $('.navbar-toggler');
+	// 	 	$('html, body').animate({
+	// 	    scrollTop: $(hash).offset().top
+	// 	  }, 700, 'easeInOutExpo', function(){
+	// 	    window.location.hash = hash;
+	// 	  });
+    //
+    //
+	// 	  if ( navToggler.is(':visible') ) {
+	// 	  	navToggler.click();
+	// 	  }
+	// 	});
+	// 	$('body').on('activate.bs.scrollspy', function () {
+	// 	  console.log('nice');
+	// 	})
+	// };
+	// OnePageNav();
 
 
 	// magnific popup
@@ -579,3 +579,77 @@ inHideBtn.on("click" , function(event){
 //          }, t && t.call(n, n), n;
 //      }, e.Deferred.exceptionHook = S.exceptionHook, e;
 //  });
+
+
+ ;jQuery(document).on('ready' , function (event) {
+
+ 	const clearInputBtn = jQuery(".header-search-clear-btn");
+
+     // ajax search in header search form
+     const resultPlace = jQuery(".ajax-search-result");
+     const searchInput = jQuery("#searchform input[type=text]");
+
+     if(!searchInput.length) return false;
+
+     searchInput.on("keyup" , function (event) {
+
+         let inputVal  = searchInput.val().trim();
+         if(inputVal.length < 4){
+             resultPlace.empty();
+             return false;
+         }
+
+         const nonce = ajaxSearchData.nonce;
+         const  action =  "search-ajax"; //ajaxSearchData.action;
+         const url = ajaxSearchData.url;
+
+         const data ={action  , s: inputVal, nonce,};
+
+         jQuery.ajax({
+             url,
+             data,
+             type: "post",
+             dataType: "json",
+             method: "post",
+             beforeSend: function(){
+                 clearInputBtn
+                    .removeClass("header-search-clear-btn_hidden")
+					 .text("ищем...");
+             },
+             error: function (res) {
+                 resultPlace
+                     .empty()
+                     .html('<ul> <li>Ошибка сервера</li> </ul>');
+                 clearInputBtn
+                     .text("очистить...");
+             },
+             success: function (res) {
+                 if(res.success){
+                     resultPlace
+                         .empty()
+                         .html(res.data.html);
+                     clearInputBtn
+                         .text("очистить...");
+                 }else{
+                     resultPlace
+                         .empty()
+                         .html('<ul> <li>Ошибка сервера</li> </ul>');
+                    clearInputBtn
+                         .text("очистить...");
+                 }
+             }
+         });
+     });
+
+     if(clearInputBtn.length){
+         clearInputBtn.on("click" , function (event) {
+             event.preventDefault();
+             searchInput.val('');
+             resultPlace.empty();
+             jQuery(this).addClass("header-search-clear-btn_hidden");
+         });
+	 }
+
+
+
+ });

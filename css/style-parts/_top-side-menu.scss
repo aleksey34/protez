@@ -41,7 +41,7 @@ width: 200px;
 
     }
   }
-  &>button{
+  &>button[type=submit]{
     position: absolute;
     top: 0;
     right:1px;

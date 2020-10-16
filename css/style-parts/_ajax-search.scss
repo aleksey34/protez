@@ -1,0 +1,28 @@
+.ajax-search-result{
+  display: block;
+  position: absolute;
+  z-index: 99999;
+  top: 53px;
+  left: 29px;
+}
+
+.header-search-clear-btn{
+  display: block;
+  position: absolute;
+  z-index: 999;
+  top: 22px;
+  right: 50px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border:none;
+  outline: none;
+  color: rgba(lighten(#000 , 15%), 0.7);
+  transition: all 0.5s;
+}
+.header-search-clear-btn:hover{
+  color: rgba(lighten(#000 , 5%), 1);
+}
+.header-search-clear-btn.header-search-clear-btn_hidden{
+  display: none;
+}
