@@ -7,16 +7,20 @@
  * @package protez
  */
 
+
+$redirect_page_url = carbon_get_theme_option("protez-404-redirect-page");
+if(!empty($redirect_page_url) && "off" !== $redirect_page_url ){
+	   wp_redirect($redirect_page_url, "301");
+    die;
+}
+
 get_header();
 ?>
-
 	<main id="primary" class="site-main">
-
 		<section class="error-404 not-found">
 			<header class="page-header">
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'protez' ); ?></h1>
 			</header><!-- .page-header -->
-
 			<div class="page-content">
 				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'protez' ); ?></p>
 
@@ -42,7 +46,6 @@ get_header();
 							?>
 						</ul>
 					</div><!-- .widget -->
-
 					<?php
 					/* translators: %1$s: smiley */
 					$protez_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'protez' ), convert_smilies( ':)' ) ) . '</p>';
@@ -50,11 +53,8 @@ get_header();
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
 					?>
-
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
-
 	</main><!-- #main -->
-
 <?php
 get_footer();

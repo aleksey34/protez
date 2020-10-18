@@ -20,7 +20,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-require_once  get_template_directory() . '/inc/protez-setup-theme.php';
+require_once  get_template_directory() . '/inc/protez-theme-setup.php';
 
 
 /**
