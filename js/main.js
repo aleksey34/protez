@@ -52,10 +52,21 @@ inHideBtn.on("click" , function(event){
      searchInput.on("keyup" , function (event) {
 
          let inputVal  = searchInput.val().trim();
+
+         if(!inputVal.length){
+            clearInputBtn
+                .addClass("header-search-clear-btn_hidden")
+                .text("");
+         }
+
+
          if(inputVal.length < 4){
-             resultPlace.empty();
+             resultPlace
+                 .empty();
              return false;
          }
+
+
 
          const nonce = ajaxSearchData.nonce;
          const  action =  "search-ajax"; //ajaxSearchData.action;
