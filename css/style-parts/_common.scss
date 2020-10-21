@@ -5,8 +5,10 @@ p {
   color:#ffffff;
   font: 15px Arial;
 }
-
-.admin-bar #page{
+body #page{
+  margin-top: 97px;
+}
+body.admin-bar #page{
   //margin-top: 35px;
   margin-top: 35px;
 }
