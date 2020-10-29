@@ -8,22 +8,24 @@
 @media (max-width: 1199px) {
   /*header , sidemenu*/
   .admin-bar .navbar {
-    top: -36px;
-  }
+    //top: -36px;
+    top:32px;  }
 }
 
 /*// Большие девайсы (десктопы, >= 992px)*/
 @media (max-width: 992px) {
   /*header sidemenu*/
   .admin-bar .navbar {
-    top: -36px;
+    top: 32px;
+    //top: -36px;
   }
 }
 
 /*// Средние девайсы («таблетки», >= 768px)*/
 @media (max-width: 769px) {
   .admin-bar .navbar {
-    top: -36px;
+    //top: -36px;
+    top: 32px;
   }
 }
 
@@ -40,7 +42,8 @@
   }
   /*header side menu*/
   .admin-bar .navbar{
-    top: -36px;
+    top: 31px;
+    //top: -36px;
   }
 }
 
