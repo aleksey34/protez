@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e93eb705b5187398d8a00b43778ee6e",
+    "content-hash": "1131c3e34041196a49d059622167058c",
     "packages": [
         {
             "name": "htmlburger/carbon-fields",
-            "version": "v3.1.20",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/htmlburger/carbon-fields.git",
-                "reference": "0688b493efcf97aab9f540d399813e1392fe30cd"
+                "reference": "cd772f1c6c002207eed71f98a8c54ad9403d5644"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/htmlburger/carbon-fields/zipball/0688b493efcf97aab9f540d399813e1392fe30cd",
-                "reference": "0688b493efcf97aab9f540d399813e1392fe30cd",
+                "url": "https://api.github.com/repos/htmlburger/carbon-fields/zipball/cd772f1c6c002207eed71f98a8c54ad9403d5644",
+                "reference": "cd772f1c6c002207eed71f98a8c54ad9403d5644",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,13 @@
             ],
             "description": "WordPress developer-friendly custom fields for post types, taxonomy terms, users, comments, widgets, options and more.",
             "homepage": "http://carbonfields.net/",
-            "time": "2020-05-18T09:54:56+00:00"
+            "support": {
+                "docs": "http://carbonfields.net/docs/",
+                "email": "wordpress@htmlburger.com",
+                "issues": "https://github.com/htmlburger/carbon-fields/issues",
+                "source": "https://github.com/htmlburger/carbon-fields"
+            },
+            "time": "2020-11-05T17:10:48+00:00"
         }
     ],
     "packages-dev": [
@@ -1125,5 +1131,6 @@
     "platform": {
         "php": ">=5.6"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

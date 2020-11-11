@@ -22,6 +22,12 @@ if ( ! defined( '_S_VERSION' ) ) {
 	 */
 require_once  get_template_directory() . '/inc/protez-theme-setup.php';
 
+/**
+ * TGM-plugin-activation
+ */
+require_once  get_template_directory() . '/inc/protez-tgm-plugin-activation.php';
+
+
 
 /**
  * carbonfields
